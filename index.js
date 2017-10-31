@@ -4,9 +4,10 @@ function getDataFromApi(searchTerm, callback) {
 	const data = {
 		part: 'snippet',
 		key: `AIzaSyD03Qsjo7JGYssbCjL99s3FKk4CicwCWIQ`,
-		q: `${searchTerm} id:name`,
+		q: `${searchTerm} vevo`,
 		type: `video`,
-		maxResults: 20,
+		maxResults: 50,
+		id: `10`,
 };
 $.getJSON(YOUTUBE_SEARCH_URL, data, callback);
 }
