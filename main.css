@@ -16,6 +16,7 @@
 
 .row {
   margin-bottom: 20px;
+  display: flex;
 }
 
 h1 {
@@ -23,7 +24,11 @@ h1 {
 }
 
 p{
-  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.col-3 {
+  padding-bottom: 15px;
 }
 
 .button-wrapper{
@@ -33,4 +38,5 @@ p{
 .entry-info{
   padding: 20px;
   width: 100%;
+  border: 1px solid black;
 }

@@ -21,12 +21,14 @@ function renderResult(result) {
       </div>
       <div class="entry info">
         <p class="video-title">${result.snippet.title}</p>
-        <p class="video-description">${result.snippet.description}
       <div>
     </div>
    </div>
   `;
 }
+
+//        <p class="video-description">${result.snippet.description}
+
 function displaySearchResults(data) {
 
     const results = data.items.map((item, index) => renderResult(item));
