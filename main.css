@@ -3,6 +3,16 @@ body{
   color: blue;
 }
 
+h1 {
+  text-align: center;
+  font-family: font114756;
+}
+
+p{
+  text-align: center;
+  font-family: font29521;
+}
+
 .entry-video {
     position: relative;
     padding-bottom: 56.25%;
@@ -21,16 +31,6 @@ body{
 
 .row {
   display: flex;
-}
-
-h1 {
-  text-align: center;
-  font-family: font114756;
-}
-
-p{
-  text-align: center;
-  font-family: font29521;
 }
 
 .col-3 {

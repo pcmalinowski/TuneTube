@@ -6,7 +6,7 @@ function getDataFromApi(searchTerm, callback) {
 		key: `AIzaSyD03Qsjo7JGYssbCjL99s3FKk4CicwCWIQ`,
 		q: `${searchTerm} vevo`,
 		type: `video`,
-		maxResults: 50,
+		maxResults: 20,
 		id: `10`,
 };
 $.getJSON(YOUTUBE_SEARCH_URL, data, callback);
@@ -16,14 +16,12 @@ function renderResult(result) {
   // console.log(result.id.videoId);
   return `
   <div class="col-3">
-    <div "entry-container">
       <div class="entry-video">
-        <iframe width="854" height="480" src="https://www.youtube.com/embed?listType=search&list=${result.id.videoId}" frameborder="0" gesture="media" allowfullscreen alt="${result.snippet.title}"></iframe></a>
+        <iframe width="854" height="480" src="https://www.youtube.com/embed?listType=search&list=${result.id.videoId}" frameborder="0" gesture="media" allowfullscreen alt="${result.snippet.title}"></iframe>
       </div>
       <div class="entry info">
         <p class="video-title">${result.snippet.title}</p>
       <div>
-    </div>
    </div>
   `;
 }
