@@ -36,21 +36,6 @@
 
   /* 3 columns, 3/12 in % */
   .col-3 {
-    width: 20%;
-  }
-
-  /* 4 columns, 4/12 in % */
-  .col-4 {
-    width: 33.333333%;
-  }
-
-  /* 6 columns, 6/12 in % */
-  .col-6 {
-    width: 50%;
-  }
-
-  /* 12 columns, 12/12 in % */
-  .col-12 {
-    width: 100%;
+    width: 25%;
   }
 }
