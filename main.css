@@ -6,6 +6,7 @@ body{
 h1 {
   text-align: center;
   font-family: font114756;
+  vertical-align: middle;
 }
 
 p{
@@ -42,7 +43,49 @@ p{
 
 .button-wrapper{
   text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
 }
+
+.button-wrapper input#search{
+  width: 300px;
+  height: 40px;
+  background: #2b303b;
+  border: none;
+  font-size: 16pt;
+  color: black;
+  padding-left: 45px;
+  padding-right: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+      -webkit-transition: background .55s ease;
+      -moz-transition: background .55s ease;
+      -ms-transition: background .55s ease;
+      -o-transition: background .55s ease;
+       transition: background .55s ease;
+}
+
+.button-wrapper .icon{
+    z-index: 1;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    background: #2b303b;
+    max-height: 50px;
+    max-width: 50px;
+  }
+
+.button-wrapper input#search::-webkit-input-placeholder {
+   color: white;
+}
+
+.button-wrapper input#search:hover, .button-wrapper input#search:focus, .button-wrapper input#search:active{
+    outline:none;
+    background: #ffffff;
+  }
 
 .entry-info{
   padding: 20px;

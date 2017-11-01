@@ -24,9 +24,7 @@ function renderResult(result) {
       <div>
    </div>
   `;
-}
-
-//        
+}      
 
 function displaySearchResults(data) {
 
