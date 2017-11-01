@@ -20,11 +20,11 @@ function renderResult(result) {
       </div>
       <div class="entry info">
         <p class="video-title">${result.snippet.title}</p>
-        <p class="video-description">${result.snippet.description}
+        <p class="video-description">${result.snippet.description}</p>
       <div>
    </div>
   `;
-}      
+}     
 
 function displaySearchResults(data) {
 
