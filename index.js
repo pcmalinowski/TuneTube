@@ -33,7 +33,6 @@ function displaySearchResults(data) {
     const results = data.items.map((item, index) => renderResult(item));
   $('.js-results').html(results);
   $('.js-results-counter').html(`<p>On youtube you would have to dig through ${data.pageInfo.totalResults} results!</p>`);
-  $('#display').removeClass('hidden');
 }
 
 
@@ -44,6 +43,7 @@ function watchForSubmission() {
         const search = searchTarget.val();
         searchTarget.val("");
         getDataFromApi(search, displaySearchResults);
+        $('#display').removeClass('hidden');
     });
 }
 
