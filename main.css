@@ -54,3 +54,7 @@ p{
 .video-description{
   color: #E9E581;
 }
+
+.hidden{
+  display: none;
+}

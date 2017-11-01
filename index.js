@@ -16,7 +16,7 @@ function renderResult(result) {
   return `
   <div class="col-3">
       <div class="entry-video">
-        <iframe width="854" height="480" src="https://www.youtube.com/embed?listType=search&list=${result.id.videoId}" frameborder="0" gesture="media" allowfullscreen alt="${result.snippet.title}"></iframe>
+        <iframe width="854" height="480" src="https://www.youtube.com/embed?listType=search&list=${result.id.videoId}?autoplay=1**" frameborder="0" gesture="media" allowfullscreen alt="${result.snippet.title}"></iframe>
       </div>
       <div class="entry info">
         <p class="video-title">${result.snippet.title}</p>
@@ -33,6 +33,7 @@ function displaySearchResults(data) {
     const results = data.items.map((item, index) => renderResult(item));
   $('.js-results').html(results);
   $('.js-results-counter').html(`<p>On youtube you would have to dig through ${data.pageInfo.totalResults} results!</p>`);
+  $('#display').removeClass('hidden');
 }
 
 
