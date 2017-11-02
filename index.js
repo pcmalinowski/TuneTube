@@ -1,5 +1,6 @@
 const YOUTUBE_SEARCH_URL = 'https://www.googleapis.com/youtube/v3/search';
 
+//API parameters
 function getDataFromApi(searchTerm, callback) {
 	const data = {
 		part: 'snippet',
@@ -12,6 +13,7 @@ function getDataFromApi(searchTerm, callback) {
 $.getJSON(YOUTUBE_SEARCH_URL, data, callback);
 }
 
+//formatting results from search query
 function renderResult(result) {
   return `
   <div class="col-3">
@@ -24,14 +26,17 @@ function renderResult(result) {
       <div>
    </div>
   `;
-}     
+}
 
+//populating html with results from search query
 function displaySearchResults(data) {
 
     const results = data.items.map((item, index) => renderResult(item));
   $('.js-results').html(results);
   $('.js-results-counter').html(`<p>On youtube you would have to dig through ${data.pageInfo.totalResults} results!</p>`);
+//displays total number of available results that would have appeared on a youtube search.
 }
+
 
 
 function watchForSubmission() {
@@ -41,7 +46,7 @@ function watchForSubmission() {
         const search = searchTarget.val();
         searchTarget.val("");
         getDataFromApi(search, displaySearchResults);
-        $('#display').removeClass('hidden');
+        $('#display').removeClass('hidden'); //hides results information on initial load of page until a search is executed.
     });
 }
 

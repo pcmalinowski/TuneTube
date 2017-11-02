@@ -1,17 +1,17 @@
 body{
-  background-color: #E9E581;
-  color: blue;
+    background-color: #E9E581;
+    color: blue;
 }
 
 h1 {
-  text-align: center;
-  font-family: font114756;
-  vertical-align: middle;
+    text-align: center;
+    font-family: font114756;
+    vertical-align: middle;
 }
 
 p{
-  text-align: center;
-  font-family: font29521;
+    text-align: center;
+    font-family: font29521;
 }
 
 .entry-video {
@@ -31,41 +31,41 @@ p{
 }
 
 .row {
-  display: flex;
+    display: flex;
 }
 
 .col-3 {
-  padding-bottom: 20px;
-  max-height: 210px;
-  overflow: hidden;
-  margin-bottom: 5%;
+    padding-bottom: 20px;
+    max-height: 210px;
+    overflow: hidden;
+    margin-bottom: 5%;
 }
 
 .button-wrapper{
-  text-align: center;
-  vertical-align: middle;
-  white-space: nowrap;
-  position: relative;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
 }
 
 .button-wrapper input#search{
-  width: 300px;
-  height: 40px;
-  background: #2b303b;
-  border: none;
-  font-size: 16pt;
-  color: black;
-  padding-left: 45px;
-  padding-right: 10px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    background: #2b303b;
+    border: none;
+    font-size: 16pt;
+    color: black;
+    padding-left: 45px;
+    padding-right: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
 
-      -webkit-transition: background .55s ease;
-      -moz-transition: background .55s ease;
-      -ms-transition: background .55s ease;
-      -o-transition: background .55s ease;
-       transition: background .55s ease;
+        -webkit-transition: background .55s ease;
+        -moz-transition: background .55s ease;
+        -ms-transition: background .55s ease;
+        -o-transition: background .55s ease;
+        transition: background .55s ease;
 }
 
 .button-wrapper .icon{
@@ -88,16 +88,16 @@ p{
   }
 
 .entry-info{
-  padding: 20px;
-  width: 100%;
-  border: 1px solid black;
-  font-style: bold;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid black;
+    font-style: bold;
 }
 
 .video-description{
-  color: #E9E581;
+    color: #E9E581;
 }
 
 .hidden{
-  display: none;
+    display: none;
 }
