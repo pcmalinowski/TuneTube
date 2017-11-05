@@ -7,7 +7,7 @@ function getDataFromApi(searchTerm, callback) {
 		key: `AIzaSyD03Qsjo7JGYssbCjL99s3FKk4CicwCWIQ`,
 		q: `${searchTerm} vevo`,
 		type: `video`,
-		maxResults: 20,
+		maxResults: 21,
 		id: `10`,
 };
 $.getJSON(YOUTUBE_SEARCH_URL, data, callback);
@@ -46,6 +46,7 @@ function watchForSubmission() {
         const search = searchTarget.val();
         searchTarget.val("");
         getDataFromApi(search, displaySearchResults);
+        $('#web-explanation').addClass('hidden')
         $('#display').removeClass('hidden'); //hides results information on initial load of page until a search is executed.
     });
 }

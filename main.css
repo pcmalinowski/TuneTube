@@ -1,6 +1,16 @@
+html{
+  z-index: 1;
+  background: url(http://monktonprep.org.uk/yr7webs14/7m/julia/images/Musical.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body{
-    background-color: #E9E581;
-    color: blue;
+    color: rgb(40, 254, 79);
+    z-index: 1000;
+    position: relative;
 }
 
 h1 {
@@ -12,6 +22,15 @@ h1 {
 p{
     text-align: center;
     font-family: font29521;
+}
+
+#web-explanation{
+  text-align: center;
+    font-family: font29521;
+    font-size: 20px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .entry-video {
@@ -36,14 +55,14 @@ p{
 
 .col-3 {
     padding-bottom: 20px;
-    max-height: 210px;
+    max-height: 254px;
     overflow: hidden;
     margin-bottom: 5%;
 }
 
 .button-wrapper{
     text-align: center;
-    vertical-align: middle;
+    vertical-align: top;
     white-space: nowrap;
     position: relative;
 }
@@ -71,11 +90,12 @@ p{
 .button-wrapper .icon{
     z-index: 1;
     color: white;
-    padding: 10px;
+    padding: 9px;
     border-radius: 5px;
     background: #2b303b;
     max-height: 50px;
-    max-width: 50px;
+    width: 40px;
+    vertical-align: top;
   }
 
 .button-wrapper input#search::-webkit-input-placeholder {
@@ -94,8 +114,8 @@ p{
     font-style: bold;
 }
 
-.video-description{
-    color: #E9E581;
+.video-description {
+    opacity: 0;
 }
 
 .hidden{
