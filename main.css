@@ -88,9 +88,7 @@ p{
 }
 
 .video-title, .js-results-counter {
-    /*background-color: rgb(255, 209, 34);*/
-    /*opacity: 0.75;*/
-    color: rgb(255, 252, 0);
+    color: white;
 }
 
 .row {
