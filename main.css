@@ -65,9 +65,6 @@ p{
 .video-title, .js-results-counter {
     background-color: rgb(255, 209, 34);
     opacity: 0.75;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
 }
 
 .row {
