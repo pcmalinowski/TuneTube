@@ -8,7 +8,7 @@ html{
 }
 
 body{
-    color: rgb(40, 254, 79);
+    color: black;
     z-index: 1000;
     position: relative;
 }
@@ -17,11 +17,15 @@ h1 {
     text-align: center;
     font-family: font114756;
     vertical-align: middle;
+    font-size: 70px;
+    text-shadow: 5px 5px 0px #000;
+    color: white;
 }
 
 p{
     text-align: center;
     font-family: font29521;
+    font-size: 16px;
 }
 
 #web-explanation{
@@ -31,6 +35,15 @@ p{
     max-width: 650px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+    color: black;
+    background-color: rgb(255, 209, 34);
+    opacity: 0.75;
+    padding: 0.5em;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 4px;
 }
 
 .entry-video {
@@ -49,13 +62,21 @@ p{
     height: 100%;
 }
 
+.video-title, .js-results-counter {
+    background-color: rgb(255, 209, 34);
+    opacity: 0.75;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
 .row {
     display: flex;
 }
 
 .col-3 {
     padding-bottom: 20px;
-    max-height: 254px;
+    max-height: 242px;
     overflow: hidden;
     margin-bottom: 5%;
 }
